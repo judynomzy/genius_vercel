@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "genuis-storage",
+  "private_key_id": "09cda294bfd1bdc181af25415dc1dd3720bc46eb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCZHc1lcb53iuVB\nrt/2UcwXvJVMFsLnY/ZqzB9FJeIiNP4+5aIOnND2RIWNKyo/hdeNHosgcij2yOCp\nvbl0l1KuIJwq1larXb30GfSZuESJyfmOomE2ZwqvzhmuL9jkn3HJaVn+UBwIVCTp\nMWxVkOrP7CQSY7rcnVRpC4OwCrAaOWGoUpj6HBTmyV5GmKsVYGLGwinXzj/dtdMU\nnRSJOryKYAxrz2rGH9I78KHIhiPIHKVmoLGws9c5h5mI0QS07ykeD9hXk1P9PiPu\nDBli14hWbtBA/hoZ4suYJwSccgaKGMbOQJucPzVZ7e3eLI0CRNEIQvK/364vGspH\nxdW1pQY1AgMBAAECggEAA1fIumHDhaBKhWbC11cNgdPUCJ9omEew7hT7ISCExuK+\n+Eg9g7HTHW/9Ncn5oqhn6S9VB0Ymyc3fRdAcF++5K48PtHRjMQZGFZRpfYpYiLpC\n+2UP1/G4+ddMl+Z4hvP04S+ueiRtRZXyC7CmC6+Ic4tVdZyoIZVCbgav1IHvOqtP\nDTOajEWFMh6ci9pV6Spiax076J1ln/n3NS22kSBG7Bn27e4Yn0k+vjMrJIlaNeH2\nIAIYn8Vdyz1+CgVQAyJyajDazvb+iXvYRGN3Jz7aWUGTftyLGjHxO9d+84B2jOj4\ndwBesH1U6cHj1ojTmpBfzTm9+CUUdiIOW7LmgVaBQwKBgQDSxiM3VhcEl8DRMLih\nBiqslI9590aIirDULi9Bi+ykjXL77Qw6nVcUGMtDCw6MNTBR0pOEE0WzQteN+fQ5\nUlPlQkzaT/OFAi4NwIGLywCuz6Qp+ECaZRNfq47WPm2/fWbhWSinCpavskbKZbX1\nw5P2KTAYUWZmdTbChAA3NTcHbwKBgQC5+IWavMmcDCctA3fF6/hUB9tfH4spfu1n\nx3XzZvQXBpP1WTcWRGuzaYGCsgwUHhbv5beaPb3G0YLg2rCn4TKHwzOuHbnXL1uD\nyEM3rOQDV/0PHFUEmUdl4TExJBAi5rsiBpUab1y1aONqmnzUAbbIg7qVJr/IvyLF\no6PTt3HamwKBgDx+tfjZ8r1UuPjRnQxKctEZypxdBpeGBv6/SrzrZj5MguYfwVTJ\neAbCnwRdFg3T7kxtvf04ctbipm+PgDM7l+zDPL+kFubkG0fDKutuloGWAy4wnIoz\n3H2nBdYkEOfXHEItjudyuJEw//RzgOhK/Bq4857nLhbWKaNms5Ek6uhtAoGANLzW\nXog1ACyuG2TFXXpKZMIJotMWKsFU374/o7PJepIh+UzAg28Jv8omsQJ+zGGwDX3u\ncC4cGDqny84YlLMXGkrv5+uEHRLP9/IdpbdAvfYAzH0zWueAyNJwmcfpT4xw+vg0\n5lc4SjWhcES5K4IE7J32ln9zmaEiYjvCpLJ79gsCgYEAoNLzHCjNG08BnDb6a2yv\niRjehGnEMqLKvI5Xk2u/3c5WQxRueM7REfm+z9KFK+wCkBLTXDyOXwOF1QF0hmO4\n8e+WFot/sCLhQB5DE1RKI1krer2zPFEzW1XVd4x7i4s8uvZT+vMkdetkKVeBUpnm\nKxJmdMmVS6y+PCOcndUSTfE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "genius@genuis-storage.iam.gserviceaccount.com",
+  "client_id": "103542181475294067375",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/genius%40genuis-storage.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
