@@ -76,7 +76,7 @@ const Header = () => {
                 <div>
                 {showHand && (
           <div className="absolute top-8 left-40 animate-bounce">
-            <span className="text-4xl">👆</span>
+            <span className="text-3xl text-red-700">👆click logo</span>
           </div>
         )}
                 </div>

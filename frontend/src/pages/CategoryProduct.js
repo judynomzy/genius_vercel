@@ -37,59 +37,59 @@ const CategoryProduct = () => {
       setData(dataResponse?.data || [])
     }
 
-    const handleSelectCategory = (e) =>{
-      const {name , value, checked} =  e.target
-
-      setSelectCategory((preve)=>{
-        return{
-          ...preve,
-          [value] : checked
-        }
-      })
-    }
+    const handleSelectCategory = (e) => {
+      const { value, checked } = e.target;
+    
+      // Update selected categories
+      setSelectCategory(prev => ({
+        ...prev,
+        [value]: checked
+      }));
+    };
+    
 
     useEffect(()=>{
       fetchData()
     },[filterCategoryList])
 
-    useEffect(()=>{
-      const arrayOfCategory = Object.keys(selectCategory).map(categoryKeyName =>{
-        if(selectCategory[categoryKeyName]){
-          return categoryKeyName
-        }
-        return null
-      }).filter(el => el)
-
-      setFilterCategoryList(arrayOfCategory)
-
-      //format for url change when change on the checkbox
-      const urlFormat = arrayOfCategory.map((el,index) => {
-        if((arrayOfCategory.length - 1 ) === index  ){
-          return `category=${el}`
-        }
-        return `category=${el}&&`
-      })
-
-      navigate("/product-category?"+urlFormat.join(""))
-    },[selectCategory])
+    useEffect(() => {
+      const arrayOfCategory = Object.keys(selectCategory)
+        .filter(categoryKeyName => selectCategory[categoryKeyName]);
+    
+      setFilterCategoryList(arrayOfCategory);
+    
+      // Update the URL when categories are selected/deselected
+      const urlFormat = arrayOfCategory
+        .map(el => `category=${el}`)
+        .join('&');
+    
+      navigate(`/product-category?${urlFormat}`);
+    }, [selectCategory, navigate]);
+    
 
 
-    const handleOnChangeSortBy = (e)=>{
-      const { value } = e.target
+    const handleOnChangeSortBy = (e) => {
+  const { value } = e.target;
 
-      setSortBy(value)
+  setSortBy(value); // Update the sort state
 
-      if(value === 'asc'){
-        setData(preve => preve.sort((a,b)=>a.sellingPrice - b.sellingPrice))
-      }
-
-      if(value === 'dsc'){
-        setData(preve => preve.sort((a,b)=>b.sellingPrice - a.sellingPrice))
-      }
+  // Directly sort the data based on user selection
+  setData(prev => {
+    const sortedData = [...prev]; // Create a new array to avoid in-place sorting
+    if (value === 'asc') {
+      return sortedData.sort((a, b) => a.sellingPrice - b.sellingPrice);
+    } else if (value === 'dsc') {
+      return sortedData.sort((a, b) => b.sellingPrice - a.sellingPrice);
+    } else {
+      return prev; // Return the original data if no sorting option is selected
     }
+  });
+};
+
+    
 
     useEffect(()=>{
-
+ 
     },[sortBy])
     
   return (
@@ -105,12 +105,12 @@ const CategoryProduct = () => {
 
                     <form className='text-sm flex flex-col gap-2 py-2'>
                         <div className='flex items-center gap-3'>
-                          <input type='radio' name='sortBy' checked={sortBy === 'asc'} onChange={handleOnChangeSortBy} value={"asc"}/>
+                          <input type='checkbox' name='sortBy' checked={sortBy === 'asc'} onChange={handleOnChangeSortBy} value={"asc"}/>
                           <label>Price - Low to High</label>
                         </div>
 
                         <div className='flex items-center gap-3'>
-                          <input type='radio' name='sortBy' checked={sortBy === 'dsc'} onChange={handleOnChangeSortBy} value={"dsc"}/>
+                          <input type='checkbox' name='sortBy' checked={sortBy === 'dsc'} onChange={handleOnChangeSortBy} value={"dsc"}/>
                           <label>Price - High to Low</label>
                         </div>
                     </form>
