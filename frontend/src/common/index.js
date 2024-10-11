@@ -1,4 +1,4 @@
-const backendDomin = "http://localhost:8080"
+const backendDomin = "https://gmijpn-wayt7etd.b4a.run/"
 
 const SummaryApi = {
     signUP : {
